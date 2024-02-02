@@ -5,6 +5,7 @@
 .navbar{
     display: flex;
     justify-content: center;
+    font-size: 1.4vw;
     width: 100vw;
     gap: 5vw;
     height: 8vh;
@@ -18,25 +19,59 @@
     color: white;
     cursor: pointer;
 }
+.logoutbtn{
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1.4vw;
+    font-family: 'Times New Roman', Times, serif;
+}
 .Home{
     display: flex;
     justify-content: center;
 }
 .Auth{
+    background-color: rgb(0, 0, 0);
     display: grid;
     justify-content: center;
     gap: 50px;
+    color: white;
 }
 .auth-container{
-   background-color: gray;
-   padding: 20px;
+   background: linear-gradient(black,gray,black);
+   padding: 40px;
+   height: 31.6vh;
+   width: 30vw;
+   font-size: 1.3vw;
 }
 .auth-container form{
     display: grid;
+    justify-content: center;
     gap: 20px;
     padding-bottom: 15px;
 }
+.auth-container form h2{
+   text-align: center;
+}
+.auth-container form button{
+    padding: 5px;
+    border: none;
+    font-size: 0.9vw;
+    font-weight: 700;
+    border-radius: 40px;
+    transition: all 2s;
+}
+.auth-container form button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
 .form-group{
-    display: flex;
+    display: grid;
     justify-content: center;
+}
+.form-group input{
+    border-radius: 3px;
+    background-color: inherit;
+    color: white;
 }

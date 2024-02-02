@@ -2,8 +2,8 @@ import "./app.css"
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Home from "./pages/home"
 import Auth from "./pages/auth"
-import CreateRecipe from "./pages/create-recipe"
-import SavedRecipe from "./pages/saved-recipe"
+import CreateRecipe from "./pages/upload-car"
+import SavedRecipe from "./pages/saved-cars"
 import Navbar from "./component/navbar"
 
 function App() {
