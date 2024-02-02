@@ -2,7 +2,8 @@ import mongoose from "mongoose";
 
 const UserSchema = new mongoose.Schema({
     username: { type: String, required: true, unique: true},
-    password: { type: String, required: true, },
+    password: { type: String, required: true, },    //THe ref is the id you will be refering to into which the Id you are trying to get
+    savedCars: [{type: mongoose.Schema.Types.ObjectId, ref: "recipes"}] // so for example the ref is recipes it can only get the ids that is stores in the recipes collection
 })
 
 //turns the schema into a collection

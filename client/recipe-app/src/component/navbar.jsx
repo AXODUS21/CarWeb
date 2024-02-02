@@ -16,8 +16,8 @@ const Navbar = () => {
   return (
     <div className='navbar'>
         <Link to="/">Home</Link>
-        <Link to="/create-recipe">Create Recipe</Link>
-        <Link to="/saved-recipe">Saved Recipes</Link>
+        <Link to="/upload-cars">Upload Car</Link>
+        <Link to="/saved-cars">Saved Cars</Link>
         {
         !cookies.access_token ? (<Link to="/auth">Login / Register</Link>) :
          <button className='logoutbtn' onClick={logout}>Logout</button>
